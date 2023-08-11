@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../exe.MOD2/ag.css">
+    <style>
+        h1 {
+            padding-left: 300px;
+            margin-top: 2%;
+        }
+
+        .carousel-inner {
+            height: 400px;
+            /* Ajustar a altura */
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 400px;
+            /* Ajuste a altura desejada */
+            object-fit: cover;
+            /* Para manter a proporção e preencher o espaço */
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            /* cor  fundo  */
+            color: white;
+            /* Cor do texto */
+            padding: 15px;
+        }
+
+        /* Cards */
+        .purple-card {
+            background-color: rgb(121, 40, 130, 1);
+            margin-bottom: 5%;
+
+        }
+
+        .yellow-card {
+            background-color: rgb(242, 173, 0, 1);
+            margin-bottom: 5%;
+        }
+
+        .card-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5%;
+        }
+
+        .card-img-top {
+            width: 120;
+            height: 60%;
+        }
+
+        .card-title1 {
+            color: azure;
+        }
+
+        .card-text1 {
+            color: azure;
+        }
+
+        /* fimCards */
+        /*começo footer */
+
+        footer {
+            background-color: rgb(63, 63, 63);
+            padding: 10px;
+        }
+
+        .footer-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact-info {
+            color: white;
+            font-size: medium;
+        }
+
+        .end-info {
+            color: white;
+            font-size: medium;
+        }
+
+        .footer-text {
+            text-align: center;
+            color: white;
+
+        }
+
+        .insta {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
+        }
+
+        .face {
+            color: #3B5998;
+            cursor: pointer;
+        }
+
+        .tw {
+            color: #00acee;
+            cursor: pointer;
+        }
+
+        .mess {
+            color: #3B5998;
+            cursor: pointer;
+
+        }
+
+        .whats {
+            color: rgb(50, 192, 14);
+            cursor: pointer;
+        }
+
+
+        @media screen and (max-width:600px) {
+            footer .footer-info {
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+
+        /*fim footer */
+    </style>
+</head>
+
+<body>
+    <!--Começo Nav bar---->
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand active" href="index.html">
+                <img src="logo.stext.png" width="60" height="50" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Parcerias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Digite aqui sua busca . . ."
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--fim Nav bar---->
+
+    <!--carrossel---->
+
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="estudo2.jpeg" class="img-small" alt="Fortaleza">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cursos profissionalizantes na área técnologica</h5>
+                        <p> Explore o mundo das tecnologias e abra portas para oportunidades ilimitadas com nossos
+                            cursos especializados. Capacite-se para uma carreira brilhante no universo da inovação!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="estudo3.jpeg" class="img-small" alt="Bonito">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de segurança da informação</h5>
+                        <p> Domine as artes da Segurança da Informação e proteja o futuro digital. Aprenda com os
+                            melhores especialistas e esteja um passo à frente na defesa cibernética.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="estudo5.jpeg" class="img-small" alt="Caribe">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Eventos online para os estudantes</h5>
+                        <p>Conecte-se com o conhecimento de líderes reais da indústria!</p>
+                        <p> Participe dos nossos eventos
+                            online com profissionais experientes da área e mergulhe em insights valiosos para sustentar
+                            sua carreira na tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </main>
+    <!--fim carrossel-->
+
+    <h1>Bem vindos a </h1>
+    <div class=" img-fluid">
+        <img src="linhas.png" style="width: 30% ;margin-left: 5% ;">
+        <img src="nov2log.png" style="width: 25%;">
+        <img src="linhas.png" style="width: 30%;">
+    </div>
+
+    <!--cards-->
+
+    <div class="card mb-3 purple-card">
+        <div class="card-body">
+            <h5 class="card-title1 fw-bold">Missão T 360°</h5>
+            <p class="card-text1">Na Trampo360°, nossa missão é abrir as portas do mundo tecnológico para todos.
+                Acreditamos que a formação profissionalizante é a chave para um futuro de oportunidades ilimitadas.
+                Nossos alunos a trilharem um caminho de sucesso na indústria da tecnologia. Através de cursos
+                inovadores,
+                eventos interativos e recursos educativos, estamos comprometidos em empoderar nossos alunos a
+                conquistarem um futuro promissor e de sucesso na indústria tecnológica</p>
+            <i class="bi bi-hand-thumbs-up-fill"></i>
+            <i class="bi bi-hand-thumbs-down"></i>
+        </div>
+    </div>
+    <div class="card yellow-card">
+        <div class="card-body">
+            <h5 class="card-title2 fw-bold">Por que Escolher os Cursos Trampo360°?</h5>
+            <p class="card-text2">🚀 Conhecimento de Especialistas Reais: Nossos cursos são ministrados por
+                profissionais experientes da indústria tecnológica. Você aprenderá com quem está na linha de frente,
+                adquirindo insights práticos e atualizados.</p>
+            <p>🌐 Conteúdo Relevante e Atualizado: A tecnologia está em constante evolução, e nossos cursos acompanham
+                as tendências e práticas da indústria. Aprenda habilidades que são imediatamente alcançadas no mundo
+                real.</p>
+            <p>💼 Preparação para o Mercado de Trabalho: Não apenas oferecemos teoria; nossos cursos estão projetados
+                para prepará-lo para o mercado de trabalho. Desde a construção de projetos práticos até simulações de
+                cenários reais, você estará pronto para enfrentar os desafios do setor.</p>
+            <p>🏆 Certificados Reconhecidos: Ao concluir nossos cursos, você recebe certificados que comprovam suas
+                habilidades. Esses certificados são reconhecidos e valorizados por empresas e empregadores da indústria.
+            </p>
+            <p>🌟 Comunidade de Aprendizado: Além do conhecimento técnico, você fará parte de uma comunidade de
+                aprendizado. Conecte-se com outros alunos, compartilhe ideias e construa uma rede de contatos.</p>
+
+
+            <i class="bi bi-hand-thumbs-up-fill"></i>
+            <i class="bi bi-hand-thumbs-down"></i>
+        </div>
+    </div>
+
+    <!--card 2-->
+    <div class="card-group">
+        <div class="card estud-1">
+            <img src="estudo1.png" class="card-img-top img-fluid" alt="Estudos1">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Inscrições abertas</h5>
+                <p class="card-text">🚀 Inscrições Abertas: Curso de Desenvolvimento Front-End</p>
+                <p> Você é apaixonado por criar interfaces incríveis e relaxantes cativantes? Quer se tornar um especialista em construção de sites modernos e responsivos? As inscrições irão até 30/08/23!</p>
+                <p class="card-text"><small class="text-body-secondary">Última atualização 3 mins atrás</small></p>
+            </div>
+        </div>
+        <div class="card estud-2">
+            <img src="estudo2.jpeg" class="card-img-top img-fluid" alt="Estudo2">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Segurança da Informação</h5>
+                <p class="card-text">🔒 Explore o Universo da Segurança da Informação.🔒</p>
+                <p>Você é apaixonado por proteger dados, desenvolver vulnerabilidades e fortalecer a cibersegurança? As inscrições estão abertas. </p>
+                <p class="card-text"><small class="text-body-secondary">Última atualização 5 mins atrás</small></p>
+            </div>
+        </div>
+        <div class="card estud-3">
+            <img src="estudo6.png" class="card-img-top img-fluid" alt="Estudo6">
+            <div class="card-body">
+                <h5 class="card-title fw-bold">Evento gratuito online</h5>
+                <p class="card-text">Preparamos um dia de eventos Gratuitos para nossos alunos com profissionais que atuam na área de técnologia de nossas empresas parceiras!  Confira na  parte de Eventos!</p>
+                <p> Anotem na agenta o dia 22/09/23!</p>
+                <p class="card-text"><small class="text-body-secondary">Última atualização 10 mins atrás</small></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--fimcard---->
+
+    <!---Rodapé-->
+
+    <footer>
+        <div class="footer-info">
+            <div class="contact-info">
+
+                <h5>Telefone para contato</h5>
+                </p>
+                <p> (11) 3858-0777 </p>
+                <p> (11) 97770-3952</p>
+            </div>
+            <div class="end-info">
+                <h5>Endereço</h5>
+                <p>Rua Gaivota, 125 - Bairro Moema</p>
+                <p> São Paulo - SP</p>
+            </div>
+            <div class="social-media text-white">
+                <h5> Nossas mídias sociais</h5>
+                <i class="bi bi-instagram insta fs-4" onclick="window.open('https://www.instagram.com/', '_blank')"></i>
+                <i class="bi bi-facebook face fs-4" onclick="window.open('https://www.facebook.com/', '_blank')"></i>
+                <i class="bi bi-twitter tw fs-4" onclick="window.open('https://www.twitter.com/', '_blank')"></i>
+                <i class="bi bi-messenger mess fs-4" onclick="window.open('https://www.messenger.com/', '_blank')"></i>
+                <i class="bi bi-whatsapp whats fs-4 " onclick="window.open('https://web.whatsapp.com/', '_blank')"></i>
+            </div>
+        </div>
+        <div class="footer-text">
+            <p>&copy; 2023 Trampo360°. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+<!---fimRodapé-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
